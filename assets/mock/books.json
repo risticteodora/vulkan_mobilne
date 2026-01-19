@@ -1,0 +1,227 @@
+[
+{
+    "id":"001",
+    "title":"Vuk",
+    "description":"Nasilje i smrt stigli su u zemlju pod Severnim nebom, a dve sasvim različite rase oživeće vekovnu mržnju i strah. U vrtlogu bezumnog rata suprotstavljene vođe vodiće svoj narod do pobede. Severno od crne reke, prostire se zemlja bogata šumama i planinama, u kojoj živi drevna rasa. Njihovi životi mere se vekovima, a ne decenijama. Pogledom ulivaju strah u kosti, a neprijatelj umire sa njihovim imenom na usnama: Anakimi. Na drugoj obali reke, prostire se zemlja Južnjaka, koji žive za trenutak, željni bogatstva i moći. Iako njihova veština nije dorasla bezgraničnoj ambiciji, Južnjaci će se upustiti u pohod na Crno kraljevstvo. Dve vojske spremne za borbu sada stoje na bojnom polju i spremno čekaju. Za narod. Za kraljevstvo. Za goli život.",
+    "price":1399,
+    "image": "assets/images/336268_w_0_0px.jpg",
+    "categoryId": "Trileri",
+    "bestseller": true
+},
+{
+     "id":"002",
+    "title":"Mlada i u 50",
+    "description":"Francuskinje vam otkrivaju da su godine samo apstrakcija \n Život je jedan, što je dobar razlog da ih proživimo nekoliko!  \n Da li ste već u životnom dobu kada ste rešile najvažnije aspekte života – karijeru i porodicu? Sada je vreme da se okrenete sebi i pronađete sasvim novu energiju, da se usredsredite malo više na trenutak, a malo manje na žurbu.  \n Pedesete nisu sredina, nisu čak ni tri četvrtine celokupnog puta. To je čisto stanje uma posle mnogih životnih dostignuća, to je zbir iskustava, to su sveobuhvatnost i vrata koja vode ka ulici punoj svega onoga što još niste probalе. Razlučujući suštinu onoga što znači prelazak u srednje godine, Milen Deklo na humorističan način savetuje svaku ženu koja se susreće s promenom u životu, pogrešnim i pravim izborima, ženu koja preispituje svoj odnos sa partnerom i decom, neguje svoju lepotu, stil i pre svega vitalistički duh.  \n U dvadesetoj, prvo što se primeti jeste svež ten i zategnuta koža oko očiju. U pedesetoj, šarm i duhovitost postaju važniji, a ljubaznost, vedrina, nežnost, inteligencija i sposobnost da saslušate nekoga odnose prevagu nad nečim „što je samo broj“. Zato prestanite da se obazirete na poglede drugih ljudi i zapamtite – godine postaju stvarne samo kada se upoređuju.  \n Čitajući duhovitu i poletnu knjigu Mlada i u pedesetoj, naučićete kako da najbolje iskoristite svoje životno iskustvo, ali i da nikad ne prestanete da uživate u malim stvarima – i sve to na francuski način.",
+    "price":999,
+    "image": "assets/images/348196_w_0_0px.jpg",
+    "categoryId": "Romani",
+    "bestseller": true
+},
+{
+     "id":"003",
+    "title":"Žao mi je, nisi moj tip",
+    "description":"Knjiga koju ćete želeti da pročitate još hiljadu puta: romantična, duhovita, prepuna iznenađenja. \nSara i Teo su potpuno različiti. Ona je naučnica koja radi na univerzitetu, beznadežno zaljubljena u profesora koji toga uopšte nije svestan. On je lenji tatin sin koji će pre ili kasnije naslediti od oca uspešnu produkcijsku kompaniju. Ona je niska, neugledna, nežnih, mekih oblina. On je klasični plejboj pun sebe, naviknut da uvek dobije sve što poželi.\nNemaju baš ništa zajedničko, osim što oboje iz dna duše preziru brak i venčanja. Upravo će se na jednom venčanju i upoznati, a obostrana netrpeljivost neće ih sprečiti da započnu igru nadmetanja, savršeno svesni da se ne podnose i da se više nikada neće sresti.\nSudbina, međutim, ima sasvim drugačije planove. Nakon što je život proveo uglavnom ugađajući sebi i rasipajući novac, Tea je otac naterao da se vrati na fakultet – u suprotnom, može da se pozdravi sa porodičnim poslom. Kao šlag na tortu, jedan od njegovih predavača je upravo ona nepodnošljiva devojka koju je upoznao na venčanju svog najboljeg druga. Ne zna se ko je više užasnut tom situacijom, ali sklapaju dogovor: ona će njemu pomoći da prođe godinu, on će njoj pomoći da zavede profesora. Šta bi moglo da krene po zlu? Uostalom, ne postoji opasnost da će se zaljubiti…",
+    "price":1299,
+    "image": "assets/images/351567_350_350px.jpg",
+    "categoryId": "Ljubavni",
+    "bestseller": false
+},
+{
+     "id":"004",
+    "title":"Beležnica neizgovorenog",
+    "description":"Svi lažu o svojim životima. Šta bi se dogodilo ako umesto toga ti ispričaš istinu? \nPriča o zelenoj beležnici koja će spojiti šestoro neznanaca i doneti im neočekivano prijateljstvo i ljubav.\nDžulijan Džesop je usamljeni ekscentrični umetnik koji veruje da ljudi nisu potpuno iskreni. Šta bi se dogodilo da jesu? Da bi to proverio, zapisuje u svetlozelenu svesku istinu o svom životu i ostavlja je u Monikinom kafeu.\nKad pronađe Džulijanovu svesku, Monika će u njoj ispisati svoju priču, ostaviće je u obližnjem vinskom baru, a zatim čvrsto odlučiti da pomogne Džulijanu da se više ne oseća tako usamljeno.\nMonika i Džilijan nisu ni svesni koliko će njihova iskrenost uticati na sve one koji kasnije pronađu tu zelenu svesku i kako će im ona promeniti život.",
+    "price":899,
+    "image": "assets/images/352586_w_1200_1200px.jpg",
+    "categoryId": "Ljubavni",
+    "bestseller": false
+},
+{
+     "id":"005",
+    "title":"Knjiga o snobovima",
+    "description":"Izvanredno duhovita zapažanja o ljudskoj prirodi \n„Vi koji prezirete svoje bližnje, snobovi ste; vi koji zaboravljate svoje prijatelje zato da biste se dodvorili onima višim od sebe, snobovi ste; vi koji se stidite svog siromaštva i crvenite zbog svog zanimanja, snobovi ste, a isto tako i vi koji se hvalite svojim poreklom ili vi koji se dičite svojim bogatstvom.“\nVilijam Mejkpis Tekeri, autor Vašara taštine, romana koji ga je proslavio i doživeo u XX veku mnogobrojne literarne i filmske adaptacije, bio je jedini rival Čarlsu Dikensu. Kako je XIX vek bio doba procvata štampe, a naročito časopisa, Tekeri je bio cenjeni saradnik mnogih redakcija i pisao je članke na različite teme. Knjiga o snobovima zbirka je tekstova koji su izlazili od 1846. do 1847. u satiričnom časopisu Panč. Njegov odnos prema društvenim pojavama koje opisuje veoma je složen, jer on istovremeno daje duhovite savete, društveno se angažuje i vešto karikira to što primećuje oko sebe, stoga ga s pravom ubrajamo u velike majstore satire.\nOve kolumne pisane britkim jezikom pršte od humora i čitaju se sa neskrivenim zadovoljstvom čak i danas, jer nepogrešivo opisuju ljudsku sklonost ka oponašanju bogatih i slavnih. Fantastična društvena lekcija aktuelna je naročito u naše doba rijaliti i selebriti „kulture“.",
+    "price":799,
+    "image": "assets/images/368043_w_1200_1200px.jpg",
+    "categoryId": "Klasici",
+    "bestseller": false
+},
+{
+     "id":"006",
+    "title":"Dok se kafa ne ohladi",
+    "description":"Stočić, kafa i odluka.\nTo je sve što je potrebno da bismo bili srećni.\nU Japanu, već više od sto godina, postoji jedan sasvim poseban kafić, i za njega se vezuje na hiljadu legendi. Priča se da, kad jednom uđete u njega, nikada ne izađete isti. Priča se da, dok pijete kafu, možete ponovo da proživite trenutak iz sopstvenog života – onaj kada ste doneli pogrešnu odluku, kada ste izgovorili reč koja bolje da je ostala neizrečena, kada ste nekome dopustili da napusti vaš život, a nije moralo da bude tako. Priča se da je dovoljno da uradite samo jednu stvar i sve promenite.\nMeđutim, postoje pravila kojih se morate pridržavati:\n1. Nalazite se u posebnom kafiću. Tu je jedan jedini stočić i čeka samo na vas.\n2. Sedite i sačekajte da vam posluže kafu.\n3. Budite spremni da ponovo proživite jedan događaj iz života.\n4. Dok to radite, ne zaboravite da ispijate kafu u malim gutljajima.\n5. Ne zaboravite glavno pravilo: nikako nemojte da dozvolite da se kafa ohladi.",
+    "price":1599,
+    "image": "assets/images/368175_350_350px.jpg",
+    "categoryId": "Romani",
+    "bestseller": true
+},
+{
+     "id":"007",
+    "title":"Leto kad sam postala lepa",
+    "description":"Čitav Belin život svodi se na čekanje leta. Sve što je lepo, sve što je magično u tom njenom životu – dešava se između juna i avgusta. Zime provodi tako što broji nedelje do narednog leta i ponovnog susreta sa Suzanom, ali pre svega Džeremajom i Konradom – momcima koje poznaje čitav život, momcima koji su joj i braća i simpatije i još svašta ponešto. A onda… jednog leta, jednog užasnog i predivnog leta, što su se stvari više menjale to su postajale baš onakve kakve su oduvek morale biti…",
+    "price":1799,
+    "image": "assets/images/369665_w_1200_1200px.jpg",
+    "categoryId": "Ljubavni",
+    "bestseller": true
+},
+{
+     "id":"008",
+    "title":"Devojka koja je dobila glas",
+    "description":"Nezaboravna i inspirativna priča o devojci koja čezne da se obrazuje kako bi pronašla svoj glas i ostvarila svoje snove.\nUprkos naizgled nesavladivim preprekama, Aduni ni u jednom trenutku ne odustaje od cilja da pobegne od siromaštva u kom se rodila i izgradi budućnost koju će sama izabrati za sebe – a da pritom pomogne i drugim devojkama koje se nalaze u istoj situaciji.\nNjena neverovatna odlučnost da pronađe radost i nadu i u najtežim okolnostima slomiće nam srce, a onda ga ponovo sastaviti – jedna hrabra devojka inspirisaće nas da pojurimo svoje snove… a možda čak i promenimo svet.",
+    "price":839,
+    "image": "assets/images/370193_w_1200_1200px.jpg",
+    "categoryId": "Klasici",
+    "bestseller": false
+},
+{
+     "id":"009",
+    "title":"Ljudi na peronu pet",
+    "description":"Pravilo br. 1: u vozu se nikad ne razgovara sa nepoznatim ljudima. Ali šta se dešava ako se to pravilo prekrši?\nPriča puna radosti, topline i ljubavi.\nSvakoga dana tačno u 8.05 Ajona Ajverson ulazi u voz kojim ide na posao. U njemu su uvek isti ljudi. Ne zna ništa o njima, ali svakog jutra gleda njihova lica i zamišlja kakvi su. Daje im čak i nadimke. Kao iskusni putnik zna sva pravila putovanja javnim prevozom:\n– niko ne putuje bez razloga,\n– u vozu se nikad ne jede vruća hrana,\n– uvek budi spreman za nepredviđene okolnosti,\n– budi uljudan ali nikad, baš nikada, ne razgovaraj sa nepoznatima.\nOnda se jednog dana Elegantan ali Seksistički Serbiton iznenada zagrcnuo zrnom grožđa i počeo da se guši. U pomoć mu je priskočio Sumnjivo Pristojan Lik iz Nju Maldena i spasao mu život. Time je otpočela čudnovata lančana reakcija u vozu.\nOva krajnje šarolika grupa ljudi koja nema ništa zajedničko osim što koriste istu liniju voza uskoro otkriva da su pretpostavke koje imaju jedni o drugima uglavnom pogrešne. Da li će novostečeni prijatelji priteći u pomoć Ajoni kada zapadne u probleme?",
+    "price":1199,
+    "image": "assets/images/371637_w_1200_1200px.jpg",
+    "categoryId": "Romani",
+    "bestseller": false
+},
+{
+     "id":"010",
+    "title":"Sve što krijemo u fioci",
+    "description":"„To je ono što želim da zapamtiš. Naše boje. Tople, iskrene. Želim da te ove žene koje čine tvoje porodično stablo – tako različite, tako žive, tako složene – inspirišu i pomognu ti da saznaš ko si, kakvih putovanja i kakvih strasti si plod.“\nStara drvena komoda, sa svojih deset fioka u raznim bojama, sada je pred njom. Od detinjstva je maštala o njoj, ali nikada nije smela ni da je dodirne. Bila je to jedina tajna bake Rite, Abuele, jedina stvar koju nisu delile. Ipak, bake više nema i ona je nasledila komodu, bez nekog očiglednog objašnjenja. Zbog toga je pomalo uplašena kada se približi komodi, oseća kao da će se dogoditi nešto posebno. I zaista, jeste posebno. U svakoj fioci skriven je jedan predmet. Naizgled sasvim obični, ti predmeti otkrivaju priču o baki kakvu nikada nije poznavala.\nSvaki predmet krije čitav jedan život. Svaki predmet čuva duboku ljubav, iluzije, uspomene, sudbinu žene koja je ostala sama i trudna, i koja gleda kako joj sreća izmiče, sve dalje i dalje, ali ne odustaje. Ta žena bila je Rita.\nKnjiga godine u Francuskoj spaja fragmente rasutih života nekoliko generacija temperamentnih i tvrdoglavih žena: od Španije do Francuske, u hiljadu boja, u simfoniji zvukova i buketu mirisa. Priča prepuna nežnosti ali i strasti, za sve one koji veruju da se sreća krije u sitnicama i da nikad nije kasno da se napravi novi korak, da se krene iz početka.",
+    "price":699,
+    "image": "assets/images/374271.jpg",
+    "categoryId": "Romani",
+    "bestseller": false
+},
+{
+     "id":"011",
+    "title":"Slušaj kako kiša pada",
+    "description":"Olivijina prva knjiga „Sve što krijemo u fioci“ bila je knjiga godine u Francuskoj i dočekana je sa oduševljenjem i publike i kritike, kao i ovaj roman.\nGrmljavina koja se približava trese prozorska stakla. Kao da predoseća dolazak oluje, crna mačka ne prestaje da mjauče. Karmen otvara prozor i pušta mačku da uđe u stari porodični kafić u Marseljetu, gradiću blizu granice Francuske i Španije.\nMesto je neuobičajeno puno. Prošle su godine otkako je Karmen videla toliko lica i čula toliko glasova koji se prepliću, kao u pesmi. Ta pesma podseća je na kišu koja pada i miris sumpora u vazduhu. Ta pesma vraća je kroz godine. Svako od tih ljudi dotakao je njen život, ostavivši svoj trag: neko ožiljak, neko osmeh. Tu su Rita i Leonor, njene starije sestre, sa kojima deli stigmu izgnanstva, ali odbija da ide njihovim putem, jer posle tolikih nevolja želi da preuzme sudbinu u svoje ruke. Tu je njena sestričina Kali, koja ju je uvek dočekivala bez pitanja, uz zagrljaj. Tu je Eskuto, njen tihi anđeo čuvar.\nOd hacijende u blizini Toleda, preko madridskog zatvora Ventas u kom frankisti divljaju, pa sve do putovanja na prekookeanskom brodu, Olivija Ruis nas majstorski vodi kroz priču u kojoj posle svih muka na kraju ljubav pobeđuje nasilje.",
+    "price":759,
+    "image": "assets/images/382375_w_0_0px.jpg",
+    "categoryId": "Romani",
+    "bestseller": false
+},
+{
+     "id":"012",
+    "title":"Teci kao reka",
+    "description":"Nezaboravni likovi i divlja priroda čija lepota oduzima dah prepliću se u ovoj dirljivoj priči o odrastanju, prijateljstvu i pronalaženju porodice i ljubavi tamo gde to najmanje očekujemo. Jednog prohladnog jesenjeg dana 1948. godine, Viktorija Neš isporučuje kasne breskve sa porodične farme usred divlje lepote Kolorada. Dok ulazi u svoj gradić, zaustavlja je tajanstveni stranac razbarušene kose i tamnih očiju. Taj slučajni susret zauvek će promeniti njihove živote. Tako počinje očaravajuća priča o izborima koji se donose u deliću sekunde. Viktorija napušta jedini dom za koji je ikada znala i beži u planine, gde se bori da preživi u divljini. Kako se smenjuju godišnja doba, menja se i Tori, vrteći se kroz vrtloge žudnje slomljenog srca i pronalazeći u savršenstvu prirode smisao i snagu da nastavi dalje i ponovo izgradi sve ono što je izgubila.",
+    "price":769,
+    "image": "assets/images/386183_w_1200_1200px.jpg",
+    "categoryId": "Klasici",
+    "bestseller": false
+},
+{
+     "id":"013",
+    "title":"Ljudi koji vole knjige",
+    "description":"Jedno leto. Dva rivala. Zaplet kakav nisu mogli ni da zamisle.\nŽivot Nore Stivens je poput knjiga koje opsesivno čita, ali ona nije klasična heroina, naprotiv. Nije odvažna i neustrašiva, nije devojka iz snova, a posebno nije mila i draga. U stvari, ona je heroina samo svojim autorima, jer je najbeskrupolozniji književni agent u Njujorku.\nJedina osoba prema kojoj ne može da bude nemilosrdna njena je voljena mlađa sestra. Zbog toga pristaje da ode u Severnu Karolinu na sestrinsko putovanje sa Libi, koja veruje da će mali grad transformisati Noru, kako bi najzad postala heroina u sopstvenoj priči. Ali umesto piknika na livadama ili romantičnog flerta sa zgodnim seoskim doktorom ili mišićavim šankerom, Nora stalno nailazi na Čarlija Lastru, umišljenog urednika iz grada. Mogla bi to da bude i lepa slučajnost da se u prošlosti nisu sretali zbog posla i nikada nije bilo prijatno.\nNora zna da ona nije savršena heroina, i Čarli zna da on nije ničiji heroj, ali kako se iznova i iznova susreću – u nizu slučajnosti koje nijedan valjani urednik ne bi dozvolio – ono što otkriju moglo bi da razotkrije pažljivo osmišljene priče koje su ispisali o sebi.",
+    "price":1099,
+    "image": "assets/images/387800_w_1200_1200px.jpg",
+    "categoryId": "Romani",
+    "bestseller": true
+},
+{
+     "id":"014",
+    "title":"Mlada kubanka,čaj i sutra",
+    "description":"Šarmantna, iskrena priča o devojci iz Majamija koja neočekivano pronalazi ljubav – i sebe – u engleskom gradiću.\nZa Lilu Rejes, leto u Engleskoj nikad nije bilo na listi želja. Njen plan bio je:\n1) da preuzme porodičnu pekaru\n2) da se preseli sa najboljom drugaricom nakon mature\n3) da živi srećno do kraja života sa dečkom\nAli onda su u nekoliko dana svi njeni snovi srušeni, a Lilin život se raspao.\nKada je zabrinuti roditelji pošalju kod rodbine u Englesku, Lili se isprva čini da je to samo vrhunac noćne more: nedostatak sunca, grozna hrana i kiša koja ne prestaje da pada.\nIpak, sve će to zaboraviti kada upozna predivnog Oriona. Iako i sam ima dovoljno problema, rešen je da pomogne Lili da izađe iz bedaka, i sebe proglašava za njenog ličnog turističkog vodiča.\nOd vinčesterske dramatične muzičke scene do predivnih engleskih pejzaža, ubrzo će Lilu očarati ne samo Orion već i sama Engleska. Da li će Lila odlučiti da zaboravi sve planove kako bi sledila svoje srce?",
+    "price":839,
+    "image": "assets/images/394752_w_0_0px.jpg",
+    "categoryId": "Ljubavni",
+    "bestseller": false
+},
+{
+     "id":"015",
+    "title":"Odvedi me daleko",
+    "description":"Ponekad moramo daleko da otputujemo da bismo pronašli dom…\nNeočekivani dobitak na lutriji.\nPrelepa vlastelinska kuća u Engleskoj.\nTri stranca u potrazi za mestom koje će nazvati domom.\nAmandin svet se raspada. Radi posao koji ne voli, zarobljena je u vezi s muškarcem koji ne želi da se obaveže, i nikada se nije osećala usamljenije u Njujorku.\nOtkad mu je devojka slomila srce i ispraznila novčanik, Sajmon se čitavo leto vozi na svom motociklu kroz Englesku kako bi skrenuo misli.\nDajana, zagonetna gospodarica Mungejta, već decenijama nije viđena u javnosti, zbog čega se kroz varoš pronose tračevi o njenoj tajnoj prošlosti.\nNakon što se spletom neobičnih okolnosti svi nađu u Mungejtu, u zajedničkoj misiji obnove nekada veličanstvene bašte, mogu li ova tri stranca da otkriju novi početak tamo gde su najmanje očekivali?",
+    "price":699,
+    "image": "assets/images/394789_w_0_0px.jpg",
+    "categoryId": "Ljubavni",
+    "bestseller": false
+},
+{
+     "id":"016",
+    "title":"Iza svake sjajne žene krije se sjajna mačka",
+    "description":"Otkrijte fascinantne SUDBINE više od 30 IZUZETNIH ŽENA koje su stvarale istoriju, rame uz rame sa svojim vernim MAČEĆIM pratiocima.\nUmetnice, naučnice, humanitarke, preduzetnice: žene iz svih sfera života uzdigle su svoje krznate i brkate saputnice u rang muza, modela, odanih saveznika, i u njima pronašle doživotne srodne duše. Sve priče u ovoj zabavnoj, inspirativnoj i šarmantnoj knjizi ukrašene su očaravajućim radovima poznate ilustratorke Lulu Mejo.\n„Ova knjiga je apsolutno prelepa! Od korice inspirisane Doručkom kod Tifanija do šarenih ilustracija, ova knjiga je jednostavno zadivljujuća.“ – Amazon",
+    "price":889,
+    "image": "assets/images/397621_w_1200_1200px.jpg",
+    "categoryId": "Romani",
+    "bestseller": true
+},
+{
+     "id":"017",
+    "title":"Pismo gospodje Vilme",
+    "description":"Svaka porodica krije svoje tajne. Neke je, međutim, bolje ostaviti zakopane.\nRoman o tajnama porodične prošlosti i sudbini žene koja je svoj život žrtvovala zbog ljubavi.\n„Ne tražim oproštaj, jer on za mene ne postoji. Tražim pomilovanje za svoju grešnu dušu zbog onih koji će ime porodice Vajs prenositi pokolenjima. I to je sve čemu se naposletku nadam...“\nDa li vredi žrtvovati ljubav za dobrobit svoje porodice?\nArtur Vajs, profesor komparativne književnosti u Virdžiniji, iznenada dolazi do saznanja o tajnama porodične prošlosti. Zaintrigiran neobičnim otkrićem, odlučuje da se zaputi u zemlju predaka, Srbiju, gde upoznaje rođaku Gizelu i dobija misteriozna pisma svoje bake Vilme i Isaka Vajsa, koja mu otkrivaju istinu o neobičnoj sudbini porodice Vajs. Iz lavirinta Vilminih strasti i palanačkih intriga, Artur dolazi do odgovora na životna pitanja koja su ga mučila godinama.\nJelena Bačić Alimpić, autorka bestselera Ringišpil, u novom romanu Pismo gospođe Vilme piše o ženi koja trpi i žrtvuje se zbog ljubavi udajom za čoveka koga ne voli. Ovaj misteriozni i senzualni roman otkriva skrivenu istinu o jednoj nesvakidašnjoj vojvođanskoj građanskoj porodici i patnjama žene koja je žrtvovala svoju ljubav kako bi druge sačuvala od siromaštva. Pismo gospođe Vilme je dirljiva priča o ljubavi i prijateljstvu, složenom odnosu oca i sina, osveti i neuzvraćenoj ljubavi, ali pre svega tragična ispovest o sudbini jedne porodice.",
+    "price":999,
+    "image": "assets/images/delfi_pismo_gospodje_vilme_jelena_bacic_alimpic.jpg",
+    "categoryId": "Klasici",
+    "bestseller": true
+},
+{
+     "id":"018",
+    "title":"Klub ubistava četvrtkom",
+    "description":"Negde među zelenim brežuljcima Kenta, u mirnom i luksuznom kompleksu za stare, četvoro neobičnih prijatelja sastaje se svakog četvrtka. Oni nisu obični penzioneri: mrske su im društvene igre i preziru da pričaju o bolestima koje ih muče. Uz čašu vina i kolačiće sa votkom, Elizabet, Džojs, Ibrahim i Ron mnogo više vole da istražuju stara, nerešena ubistva i tako vežbaju male sive ćelije.\nJednog lepog sunčanog dana, na njihovom se pragu dešava pravo-pravcato ubistvo, a Klub ubistava četvrtkom se prvi put nalazi usred istrage stvarnog slučaja. Možda su zagazili u devetu deceniju, ali ove samo naizgled simpatično radoznale i naivne bakice i dekice i dalje imaju poneki trik u rukavu!",
+    "price":1199,
+    "image": "assets/images/klub.jpg",
+    "categoryId": "Klasici",
+    "bestseller": true
+},
+{
+     "id":"019",
+    "title":"Kupoholičarka u holivudu",
+    "description":"Beki Brendon (devojačko prezime Blumvud) stiže u Holivud! Čini se da je čitav njen život vodio ka tome. Beki se druži sa slavnima... ili će se bar družiti, kad konačno upozna filmsku zvezdu Sejdž Simor, za koju sada radi Bekin muž, Luk.\nToliko toga treba videti i doživeti! A da bi se Mini upisala u elitno holivudsko obdanište biće im potrebna izvesna... hm... pomoć.\nBeki žudi da započne novu karijeru – postaće stilistkinja filmskih zvezda. Čeka je crveni tepih! Ali Beki uskoro otkriva da u Holivudu nije lako. Srećom, njena najbolja drugarica Suz dolazi da joj pravi društvo, te zajednički kreću u osvajanje Holivuda. Međutim... ne ide sve baš onako kako su one zamislile.\nKada se Beki ukaže jedinstvena prilika, ona neće smeti da je propusti. Ali, da li je cena koju treba da plati previsoka?\n„Kinsela ima istinskog dara za pisanje komedije.“ The Boston Globe\n„Kinselina Beki je odvažna i zabavna... Ni u jednoj prodavnici nećete naći šarmantniju glavnu junakinju od nje.“ People",
+    "price":1099,
+    "image": "assets/images/kupoholicarka-u-holivudu-sofi-kinsela-makart--f1-33006.jpg",
+    "categoryId": "Ljubavni",
+    "bestseller": true
+},
+{
+     "id":"020",
+    "title":"Ljudi koje srećemo na odmoru",
+    "description":"Bestseler #1 Njujork tajmsa\nJedan od najvećih BookTok hitova.\nPobedila je u tradicionalnom godišnjem glasanju čitalaca na sajtu Goodreads u kategoriji najbolji ljubavni roman.\nDvoje najboljih prijatelja.\nDeset letnjih putovanja.\nJedna, poslednja šansa za ljubav.\nPopi i Aleks. Aleks i Popi. Dva sveta različita. Ona živi za zabavu i sanja o tome da proputuje svet, on bi se radije krio u svom stanu uz dobru knjigu. Ipak, nakon sudbonosnog susreta pre mnogo godina, oni postaju najbolji prijatelji. Veći deo godine žive daleko jedno od drugog – ona je u Njujorku, on u njihovom rodnom gradiću – ali svakog leta, već deset godina, zajedno provode jednu veličanstvenu nedelju odmora. Barem je tako bilo do pre dve godine, kada su sve pokvarili. Od tada nisu razgovarali.\nPopi ima sve što bi mogla da poželi, ali oseća da se zaglavila u kolotečini. Da je neko pita kada je poslednji put bila zaista srećna, bez sumnje bi to bilo ono nesrećno putovanje sa Aleksom. Zato odlučuje da ubedi svog najboljeg prijatelja da odu na još jedan zajednički odmor – da otvori sve karte, uradi sve kako treba. Za divno čudo, Aleks pristaje.\nSada ima nedelju dana da sve popravi. Kad bi samo mogla da nekako zaobiđe jednu veliku istinu koja tiho lebdi nad njihovim naizgled savršenim prijateljstvom. Šta bi uopšte moglo da pođe naopako?",
+    "price":729,
+    "image": "assets/images/ljudi_koje_srecemo_na_odmoru_vv.jpg",
+    "categoryId": "Romani",
+    "bestseller": true
+},
+{
+     "id":"021",
+    "title":"Prohujalo s vihorom",
+    "description":"Godina je 1936, a jedan roman je za šest meseci prodat u milion primeraka. Sledeće godine, 1937, isti roman osvaja Pulicerovu nagradu, a 1939. njegova ekranizacija postaje najuspešnije ostvarenje u istoriji američke kinematografije.\nDa, u pitanju je Prohujalo s vihorom, jedan od najsenzacionalnijih izdavačkih fenomena svih vremena. Veliki američki roman, knjiga koja je u Sjedinjenim Državama najprodavanija posle Biblije i koju su kritičari hrabro poredili čak i sa Tolstojevim klasikom Rat i mir.\nAli iznad svega toga, iznad impresivnih brojki i nagrada, to je veličanstvena oda američkom Jugu, jednom vremenu i njegovim ljudima, priča čiji je simbol bila i ostala nekonvencionalna i nesavršena junakinja, razmažena i hirovita, ali i neustrašiva i domišljata Skarlet O’Hara. Žena čiji je lik veći i od samog romana i zbog čije snage i u najtežim trenucima podsećamo sebe da sutra zaista jeste novi dan.",
+    "price":2290,
+    "image": "assets/images/Margaret-Micel-Prohujalo-sa-vihorom_press.png",
+    "categoryId": "Klasici",
+    "bestseller": false
+},
+{
+     "id":"022",
+    "title":"Ponoć u Njujorku",
+    "description":"Jedan izbor može da vam promeni život.\nNezaboravna ljubavna priča prepuna napetosti, oslikana na veličanstvenom platnu umetničkog sveta Njujorka.\nLorena radi u jednoj reklamnoj agenciji u Parizu. Pre mnogo godina izgubila je oca, poznatog galeristu, koji je upucan nasred ulice u centru Menhetna, a počinilac nikada nije pronađen. Zagonetni stranac koji tvrdi da je ubio njenog oca sada preti i njoj, i zbog toga je Lorena srećna kada dobije ponudu za posao u Njujorku – nada se da je progonitelj tamo neće pronaći.\nLeo je mladi umetnik iz Njujorka. Upravo je odslužio kaznu zbog falsifikovanja i prodaje dela poznatih umetnika. Međutim, bogati kolekcionar kojeg je prevario želi da ga natera da mu plati odštetu i traži dva miliona dolara.\nPo dolasku u Njujork, Lorena je napadnuta u Central parku. Igrom sudbine, Leo se našao u blizini i pomogao joj da se odbrani.\nNi Lorena ni Leo nisu svesni koliko su njihovi životi oduvek povezani: njihova ljubav je neizbežna, ali i osuđena na propast.",
+    "price":1159,
+    "image": "assets/images/Mark-Miler-Ponoc-u-Njujorku_PRESS-723x1024.jpg",
+    "categoryId": "Romani",
+    "bestseller": false
+},
+{
+     "id":"023",
+    "title":"Neki drugi život",
+    "description":"Bliznakinje Irene i Marta van der Linden bezbrižno provode detinjstvo i mladost u živopisnom gradiću Harlemu, nadomak Amsterdama. Izgledom skoro identične ali po karakteru nepomirljivo različite, neraskidivo su vezane jedna za drugu.\nNjihov brižni otac, cenjeni i imućni lekar Henrik van der Linden, međutim, krije tajnu koja preti da ugrozi porodičnu sreću. Ljudska zloba, strastvena želja za osvetom i mračna zavera iz korena će promeniti život dveju sestara. Jedna od njih izgubiće sve...\nJelena Bačić Alimpić, autorka devet bestselera, svojim novim, desetim romanom Neki drugi život čitaocima donosi uzbudljivu, napetu i psihološki iznijansiranu priču o izdaji, odanosti i neuništivoj volji da se opstane i voli.",
+    "price":999,
+    "image": "assets/images/neki_drugi_zivot-jelena_bacic_alimpic_v.jpg",
+    "categoryId": "Klasici",
+    "bestseller": false
+},
+{
+     "id":"024",
+    "title":"Nešto nam ubija decu",
+    "description":"Kada deca iz Arčers Pika – uspavanog gradića u srcu Amerike – počnu da nestaju, sve izgleda beznadežno.\nVećina dece se nikad ne vrati, ali ona koja uspeju ispričaće užasne priče – pune neverovatnih detalja o zastrašujućim stvorenjima koja žive u senkama.\nNjihova jedina nada da nađu i eliminišu pretnju jeste dolazak misteriozne strankinje, koja veruje deci i jedina može da vidi isto što i oni.",
+    "price":1900,
+    "image": "assets/images/nesto-nam-ubija-decu-tom-1-verter-deledera-dzejms-tinion-iv-mikel-muerto-makart--f2-48347.jpg",
+    "categoryId": "Trileri",
+    "bestseller": true
+},
+{
+     "id":"025",
+    "title":"Sjaj mog života",
+    "description":"Vudlend Hils u Luizijani je mesto dugih, vrelih leta, komšijskog roštiljanja u svakom dvorištu i buradi ledenog piva ispod krošnji egzotičnog drveća. Ipak, uskoro će postati poprište zločina... Jednog dana se Lindi Simspon vraća kući iz škole i upada pravo u zamku: neko je čeka, žica je zategnuta između bandera na putu. Biće napadnuta tek nekoliko metara od njene kuće. Svedoka nema i počinilac nije uhvaćen. Njen komšija, četrnaestogodišnjak, otkad zna za sebe je ludo zaljubljen u nju. On čvrsto rešava da nađe krivca i istražuje sve osumnjičene u komšiluku. Međutim, pre nego što se to leto okonča, postaće jasno da dobrotvorni komšiluk Vudlend Hilsa mnogo toga skriva. Iza svake uredne bele ograde krije se složena i tamna mreža. U želji da reši misteriju, maloletni detektiv će naići na preteći, njemu nepoznat svet, koji ga sve dublje uvlači u sebe.\nOvaj izuzetni roman koji je ujedno i pronicljiva studija o odrastanju i o nezaobilaznim vrednostima zaista je originalno delo na današnjoj književnoj sceni, a njegov autor poseduje jedinstven književni glas.\n„Od početka do kraja, ovo je delo puno mudrosti, duha i čudesa.“ BookPage.com\n„Teška i čudesna priča o odrastanju. Volšov roman je i triler i putopis o Luizijani i duboko osećajan i upečatljiv uvid u zaljubljeni tinejdžerski um.“ People\n„Odlično... Volš poseduje urođeni dar za zaplet i napetost, ali se ovde istinsko zadovoljstvo krije u njegovom pripovedačkom umeću. Ovaj snažni i vešto pisani roman ne ispušta se iz ruku do samog kraja.“ Entertainment Weekly",
+    "price":899,
+    "image": "assets/images/sjaj_mog_zivota-m_o_vols_v.jpg",
+    "categoryId": "Psihologija",
+    "bestseller": false
+}
+]

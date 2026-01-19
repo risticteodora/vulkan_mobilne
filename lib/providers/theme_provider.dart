@@ -20,6 +20,7 @@ class ThemeProvider extends ChangeNotifier {
   Future<bool> getTheme() async {
     SharedPreferences prefs =await SharedPreferences.getInstance();
     _darkTheme= prefs.getBool(THEME_STATUS) ?? false;
+    notifyListeners();
     return _darkTheme;
   }
 }

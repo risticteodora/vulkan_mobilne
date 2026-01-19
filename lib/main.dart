@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:moj_projekat/consts/theme.dart';
+import 'package:moj_projekat/providers/catalog_provider.dart';
 import 'package:moj_projekat/providers/theme_provider.dart';
+import 'package:moj_projekat/repositories/mock/mock_book_repository.dart';
 import 'package:moj_projekat/screens/root_screen.dart';
 //import 'package:moj_projekat/screens/home_screen.dart';
 import 'package:provider/provider.dart';
@@ -18,11 +20,14 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) { return ThemeProvider();}),
+        ChangeNotifierProvider(create: (_) => CatalogProvider(MockBookRepository())..load())
       ],
       child: Consumer<ThemeProvider>(builder: (context, themeProvider, child) {
         return MaterialApp(
           title: 'Vulkan',
-          theme: themeProvider.isDarkTheme ? Style.dark(): Style.light(),
+          theme:Style.light(),
+          darkTheme: Style.dark(),
+          themeMode: ThemeMode.system,
           home: const RootScreen(),
         );
       }),
