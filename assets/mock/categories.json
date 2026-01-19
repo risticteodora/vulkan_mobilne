@@ -1,22 +1,27 @@
 [
     {
         "id": "Trileri",
-        "name": "Trileri"
+        "name": "Trileri",
+        "iconAsset":"assets/images/psychological-thriller-icon-vector-image-can-be-used-movie-genres_120816-358793.jpg.avif"
     },
     {
         "id": "Romani",
-        "name": "Romani"
+        "name": "Romani",
+        "iconAsset":"assets/images/editable-flip-previous-page-vector-600nw-2282299607.jpg.webp"
     },
     {
         "id": "Ljubavni",
-        "name": "Ljubavni"
+        "name": "Ljubavni",
+        "iconAsset":"assets/images/3141738.png"
     },
     {
         "id": "Klasici",
-        "name": "Klasici"
+        "name": "Klasici",
+        "iconAsset":"assets/images/3500485.png"
     },
     {
         "id": "Psihologija",
-        "name": "Psihologija"
+        "name": "Psihologija",
+        "iconAsset":"assets/images/istockphoto-1329663428-612x612.jpg"
     }
 ]

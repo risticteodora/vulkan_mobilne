@@ -26,8 +26,25 @@ class CatalogProvider extends ChangeNotifier{
       notifyListeners();
     }
   }
+
+  List<Book> get filtered{
+    var list= books;
+    if(selectedCategoryId!= null){
+      list= list.where((b)=> b.categoryId == selectedCategoryId).toList();
+    }
+    if(query.trim().isNotEmpty){
+      final q= query.toLowerCase();
+      list= list.where((b)=> b.title.toLowerCase().contains(q)).toList();
+    }
+    return list;
+  }
   
   List<Book> get latest => books.take(10).toList();
+
+  void setQuery(String v){
+    query=v;
+    notifyListeners();
+  }
 
   void setCategory(String? id){
     selectedCategoryId=id;

@@ -99,7 +99,7 @@ class HomeScreen extends StatelessWidget{
                 itemBuilder: (context,i){
                   final c=catalog.categories[i];
                   return CategoryRound(
-                    //iconAsset: c.iconAsset,
+                    iconAsset: c.iconAsset,
                     name: c.name,
                     onTap: (){
                       context.push('${CategoryBooksScreen.path}?id=${c.id}&name=${Uri.encodeComponent(c.name)}');
