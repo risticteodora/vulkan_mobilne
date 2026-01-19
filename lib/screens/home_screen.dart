@@ -80,6 +80,7 @@ class HomeScreen extends StatelessWidget{
               Row(
                 children: const [
                   Expanded(child: Divider(thickness: 1)),
+                  SizedBox(width: 12),
                   SectionHeader(title: "Kategorije", fontSize: 18),
                   SizedBox(width: 12),
                   Expanded(child: Divider(thickness: 1)),
@@ -110,6 +111,7 @@ class HomeScreen extends StatelessWidget{
                 Row(
                 children: const [
                   Expanded(child: Divider(thickness: 1)),
+                  SizedBox(width: 12),
                   SectionHeader(title: "Aktuelna ponuda", fontSize: 22),
                   SizedBox(width: 12),
                   Expanded(child: Divider(thickness: 1)),

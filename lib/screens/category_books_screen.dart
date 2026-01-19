@@ -31,7 +31,7 @@ class CategoryBooksScreen extends StatelessWidget{
             crossAxisCount: 2,
             mainAxisSpacing: 12,
             crossAxisSpacing: 12,
-            childAspectRatio: 0.72
+            childAspectRatio: 0.55
           ),
           itemBuilder: (_,i)=> BookCard(book: list[i]),
         ),

@@ -3,7 +3,7 @@ import 'package:moj_projekat/consts/theme.dart';
 import 'package:moj_projekat/providers/catalog_provider.dart';
 import 'package:moj_projekat/providers/theme_provider.dart';
 import 'package:moj_projekat/repositories/mock/mock_book_repository.dart';
-import 'package:moj_projekat/screens/root_screen.dart';
+import 'package:moj_projekat/router/app_router.dart';
 //import 'package:moj_projekat/screens/home_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -23,12 +23,12 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => CatalogProvider(MockBookRepository())..load())
       ],
       child: Consumer<ThemeProvider>(builder: (context, themeProvider, child) {
-        return MaterialApp(
+        return MaterialApp.router(
           title: 'Vulkan',
           theme:Style.light(),
           darkTheme: Style.dark(),
           themeMode: ThemeMode.system,
-          home: const RootScreen(),
+          routerConfig: AppRouter.create()
         );
       }),
     );
