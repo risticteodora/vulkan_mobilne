@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:moj_projekat/providers/cart_provider.dart';
 import 'package:moj_projekat/providers/catalog_provider.dart';
+import 'package:moj_projekat/util/money.dart';
 import 'package:provider/provider.dart';
 
 class BookDetailsScreen extends StatelessWidget{
@@ -30,7 +32,19 @@ class BookDetailsScreen extends StatelessWidget{
           const SizedBox(height: 6,),
           Text('Kategorija: ${book.categoryId}'),
           const SizedBox(height: 8,),
-          Text(book.price.toString() , style: const TextStyle(fontSize: 23, fontWeight: FontWeight.w700)),
+          Text(Money.rsd(book.price) , style: const TextStyle(fontSize: 23, fontWeight: FontWeight.w700)),
+          const SizedBox(height: 14,),
+          Row(
+            children: [
+              Expanded(
+                child: ElevatedButton.icon(
+                  onPressed: ()=> context.read<CartProvider>(). add(book), 
+                  icon:  const Icon(Icons.add_shopping_cart_rounded),
+                  label: const Text('Dodaj u korpu', style: TextStyle(fontSize: 15),)
+                ),
+              ),
+            ],
+          ),
           const SizedBox(height: 12,),
           Row(
                 children: const [
@@ -43,6 +57,7 @@ class BookDetailsScreen extends StatelessWidget{
           ),
           const SizedBox(height: 8,),
           Text(book.description),
+          const SizedBox(height: 18,),
         ],
       ),
     );

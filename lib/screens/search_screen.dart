@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:moj_projekat/providers/catalog_provider.dart';
 import 'package:moj_projekat/widgets/book_card.dart';
 import 'package:moj_projekat/widgets/empty_state.dart';
-import 'package:moj_projekat/widgets/title_text.dart';
 import 'package:provider/provider.dart';
 
 class SearchScreen extends StatelessWidget{
@@ -20,7 +19,7 @@ class SearchScreen extends StatelessWidget{
           children: [
             TextField(
               decoration: InputDecoration(
-                hintText: 'Pretrazi po nazivu',
+                hintText: 'Pretraži našu ponudu',
                 prefixIcon: const Icon(Icons.search_rounded),
                 suffixIcon: catalog.query.isEmpty? null : IconButton(
                   onPressed: ()=>context.read<CatalogProvider>().setQuery(''), 
@@ -32,7 +31,7 @@ class SearchScreen extends StatelessWidget{
             const SizedBox(height: 12,),
             Expanded(
               child: catalog.filtered.isEmpty ? 
-                const EmptyState(title: "Nema rezultata", subtitle: "Probajte ponovo") : 
+                const EmptyState(title: "Nema rezultata", subtitle: "Pokušajte ponovo") : 
                 GridView.builder(
                   itemCount: catalog.filtered.length,
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:moj_projekat/consts/theme.dart';
+import 'package:moj_projekat/providers/cart_provider.dart';
 import 'package:moj_projekat/providers/catalog_provider.dart';
 import 'package:moj_projekat/providers/theme_provider.dart';
 import 'package:moj_projekat/repositories/mock/mock_book_repository.dart';
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) { return ThemeProvider();}),
-        ChangeNotifierProvider(create: (_) => CatalogProvider(MockBookRepository())..load())
+        ChangeNotifierProvider(create: (_) => CatalogProvider(MockBookRepository())..load()),
+        ChangeNotifierProvider(create: (_) => CartProvider()),
       ],
       child: Consumer<ThemeProvider>(builder: (context, themeProvider, child) {
         return MaterialApp.router(
