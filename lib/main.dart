@@ -4,6 +4,7 @@ import 'package:moj_projekat/providers/auth_provider.dart';
 import 'package:moj_projekat/providers/cart_provider.dart';
 import 'package:moj_projekat/providers/catalog_provider.dart';
 import 'package:moj_projekat/providers/theme_provider.dart';
+import 'package:moj_projekat/providers/wishlist_provider.dart';
 import 'package:moj_projekat/repositories/mock/mock_auth_repository.dart';
 import 'package:moj_projekat/repositories/mock/mock_book_repository.dart';
 import 'package:moj_projekat/router/app_router.dart';
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => AuthProvider(MockAuthRepository())),
         ChangeNotifierProvider(create: (_) => CatalogProvider(MockBookRepository())..load()),
         ChangeNotifierProvider(create: (_) => CartProvider()),
+        ChangeNotifierProvider(create: (_) => WishlistProvider()),
       ],
       child: Consumer<ThemeProvider>(builder: (context, themeProvider, child) {
         return MaterialApp.router(

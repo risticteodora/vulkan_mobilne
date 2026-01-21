@@ -9,6 +9,7 @@ import 'package:moj_projekat/screens/login_screen.dart';
 import 'package:moj_projekat/screens/register_screen.dart';
 import 'package:moj_projekat/screens/root_screen.dart';
 import 'package:moj_projekat/screens/splash_screen.dart';
+import 'package:moj_projekat/screens/wishlist_screen.dart';
 import 'package:provider/provider.dart';
 
 class AppRouter {
@@ -20,6 +21,10 @@ class AppRouter {
         GoRoute(
           path: SplashScreen.path,
           builder: (context, state) => const SplashScreen(),
+        ),
+        GoRoute(
+          path: WishlistScreen.path,
+          builder: (context, state) => const WishlistScreen(),
         ),
         GoRoute(
           path: LoginScreen.path,

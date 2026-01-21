@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:moj_projekat/providers/cart_provider.dart';
 import 'package:moj_projekat/providers/catalog_provider.dart';
+import 'package:moj_projekat/providers/wishlist_provider.dart';
 import 'package:moj_projekat/util/money.dart';
 import 'package:provider/provider.dart';
 
@@ -17,6 +18,7 @@ class BookDetailsScreen extends StatelessWidget{
   Widget build(BuildContext context) {
     final catalog= context.watch<CatalogProvider>();
     final book=catalog.books.firstWhere((b)=> b.id == bookId);
+    final wished= context.watch<WishlistProvider>().isWished(book.id);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Detalji knjige'),),
@@ -36,6 +38,11 @@ class BookDetailsScreen extends StatelessWidget{
           const SizedBox(height: 14,),
           Row(
             children: [
+              IconButton(
+                onPressed: ()=> context.read<WishlistProvider>().toggle(book.id), 
+                icon: Icon(wished? Icons.favorite : Icons.favorite_border)
+              ),
+              const SizedBox(width: 8,),
               Expanded(
                 child: ElevatedButton.icon(
                   onPressed: ()=> context.read<CartProvider>(). add(book), 

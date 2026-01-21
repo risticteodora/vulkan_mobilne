@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:moj_projekat/models/book.dart';
 import 'package:moj_projekat/screens/book_details_screen.dart';
+import 'package:moj_projekat/util/money.dart';
 import 'package:moj_projekat/widgets/subtitle_text.dart';
 import 'package:moj_projekat/widgets/title_text.dart';
 
@@ -11,6 +12,7 @@ class BookCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return InkWell(
       onTap: () => context.push('${BookDetailsScreen.path}?id=${book.id}'),
       borderRadius: BorderRadius.circular(2),
@@ -45,12 +47,12 @@ class BookCard extends StatelessWidget {
             ),
 
             const SizedBox(height: 6),
-            SubtitleTextWidget(
-              label: '${book.price} RSD',
-              fontSize: 14,
-              fontWeight: FontWeight.w700,
-            ),
-
+            Row(
+                  children: [
+                    const SizedBox(width: 10,),
+                    SubtitleTextWidget( fontSize: 14, fontWeight: FontWeight.w700, label: Money.rsd(book.price),),
+                  ],
+                ),
             const SizedBox(height: 12),
           ],
         ),

@@ -4,6 +4,7 @@ import 'package:moj_projekat/models/user_role.dart';
 import 'package:moj_projekat/providers/auth_provider.dart';
 import 'package:moj_projekat/screens/admin_panel_screen.dart';
 import 'package:moj_projekat/screens/login_screen.dart';
+import 'package:moj_projekat/screens/wishlist_screen.dart';
 import 'package:provider/provider.dart';
 
 class ProfileScreen extends StatelessWidget{
@@ -46,7 +47,7 @@ class ProfileScreen extends StatelessWidget{
           ListTile(
             leading: const Icon(Icons.favorite_border),
             title: const Text("Lista želja"),
-            //onTap: () => context.push(WishlistScreen.path),
+            onTap: () => context.push(WishlistScreen.path),
           ),
           ListTile(
             leading: const Icon(Icons.history),
