@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:moj_projekat/consts/theme.dart';
+import 'package:moj_projekat/providers/auth_provider.dart';
 import 'package:moj_projekat/providers/cart_provider.dart';
 import 'package:moj_projekat/providers/catalog_provider.dart';
 import 'package:moj_projekat/providers/theme_provider.dart';
+import 'package:moj_projekat/repositories/mock/mock_auth_repository.dart';
 import 'package:moj_projekat/repositories/mock/mock_book_repository.dart';
 import 'package:moj_projekat/router/app_router.dart';
 //import 'package:moj_projekat/screens/home_screen.dart';
@@ -21,6 +23,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) { return ThemeProvider();}),
+        ChangeNotifierProvider(create: (_) => AuthProvider(MockAuthRepository())),
         ChangeNotifierProvider(create: (_) => CatalogProvider(MockBookRepository())..load()),
         ChangeNotifierProvider(create: (_) => CartProvider()),
       ],
