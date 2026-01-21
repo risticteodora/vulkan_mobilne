@@ -24,12 +24,12 @@ class HomeScreen extends StatelessWidget{
         children: [
           Image.asset(
             'assets/images/logo.jpg',
-            height: 20,
+            height: 40,
           ),
           const SizedBox(width: 2),
           Text(
             'Vulkan knjižara',
-            style: GoogleFonts.lora(fontSize: 22, fontWeight: FontWeight.w500, color: const Color.fromARGB(255, 70, 79, 85)),
+            style: GoogleFonts.lora(fontSize: 32, fontWeight: FontWeight.w500, color:Theme.of(context).colorScheme.onSurface),
           ),
           ],
         ),
