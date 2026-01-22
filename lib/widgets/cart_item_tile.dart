@@ -21,7 +21,7 @@ class CartItemTile extends StatelessWidget{
           child: Image.asset(item.book.image, width: 55, height: 55, fit: BoxFit.cover),
         ),
         title: Text(item.book.title, maxLines: 2,overflow: TextOverflow.ellipsis,),
-        subtitle: Text('${Money.rsd(item.book.price)} • Qty: ${item.qty}'),
+        subtitle: Text('${Money.rsd(item.book.price)} • Količina: ${item.qty}'),
         trailing: Wrap(
           spacing: 4,
           children: [

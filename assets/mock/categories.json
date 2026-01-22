@@ -2,26 +2,31 @@
     {
         "id": "Trileri",
         "name": "Trileri",
-        "iconAsset":"assets/images/psychological-thriller-icon-vector-image-can-be-used-movie-genres_120816-358793.jpg.avif"
+        "iconLight":"assets/images/psychological-thriller-icon-vector-image-can-be-used-movie-genres_120816-358793.jpg.avif",
+        "iconDark": "assets/images/istockphoto-1304720088-612x612-removebg-preview.png"
     },
     {
         "id": "Romani",
         "name": "Romani",
-        "iconAsset":"assets/images/editable-flip-previous-page-vector-600nw-2282299607.jpg.webp"
+        "iconLight":"assets/images/editable-flip-previous-page-vector-600nw-2282299607.jpg.webp",
+        "iconDark": "assets/images/hd-open-book-white-icon-symbol-transparent-background-701751695033476xelmcdrhf9.png"
     },
     {
         "id": "Ljubavni",
         "name": "Ljubavni",
-        "iconAsset":"assets/images/3141738.png"
+        "iconLight":"assets/images/3141738.png",
+        "iconDark":"assets/images/hd-love-white-line-heart-icon-png-701751695055674kypw5hjavd-removebg-preview.png"
     },
     {
         "id": "Klasici",
         "name": "Klasici",
-        "iconAsset":"assets/images/3500485.png"
+        "iconLight":"assets/images/3500485.png",
+        "iconDark":"assets/images/3500485.png"
     },
     {
         "id": "Psihologija",
         "name": "Psihologija",
-        "iconAsset":"assets/images/istockphoto-1329663428-612x612.jpg"
+        "iconLight":"assets/images/3367695.png",
+        "iconDark":"assets/images/psychology-head-silhouette-icon-k1808scba2c8vsxn.jpg.png"
     }
 ]

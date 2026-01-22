@@ -98,8 +98,9 @@ class HomeScreen extends StatelessWidget{
                 ),
                 itemBuilder: (context,i){
                   final c=catalog.categories[i];
+                  final isDark = Theme.of(context).brightness ==Brightness.dark;
                   return CategoryRound(
-                    iconAsset: c.iconAsset,
+                    iconAsset: isDark ? c.iconDark : c.iconLight,
                     name: c.name,
                     onTap: (){
                       context.push('${CategoryBooksScreen.path}?id=${c.id}&name=${Uri.encodeComponent(c.name)}');

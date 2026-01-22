@@ -1,17 +1,27 @@
+import 'package:flutter/material.dart';
+
 class Category {
   final String id;
   final String name;
-  final String iconAsset;
+  final String iconLight;
+  final String iconDark;
 
   const Category({
     required this.id,
     required this.name,
-    required this.iconAsset
+    required this.iconLight,
+    required this.iconDark
   });
+
+  String iconFor(BuildContext context){
+    final isDark= Theme.of(context).brightness == Brightness.dark;
+    return isDark? iconDark : iconLight;
+  }
 
   factory Category.fromJson(Map<String, dynamic> j) => Category(
         id: j['id'],
         name: j['name'],
-        iconAsset: j['iconAsset'],
+        iconLight: j['iconLight'],
+        iconDark: j['iconDark']
       );
 }
