@@ -23,28 +23,58 @@ import 'package:provider/provider.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Hvatanje grešaka u konzoli za lakše praćenje
-  FlutterError.onError = (FlutterErrorDetails details) {
-    FlutterError.dumpErrorToConsole(details);
+  // 1. HVATAČ GREŠAKA TOKOM ISCRTAVANJA EKRANA
+  ErrorWidget.builder = (FlutterErrorDetails details) {
+    return Directionality(
+      textDirection: TextDirection.ltr,
+      child: Material(
+        color: Colors.black,
+        child: Center(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.all(20),
+            child: Text(
+              "🚨 GREŠKA NA EKRANU:\n\n${details.exceptionAsString()}",
+              style: const TextStyle(color: Colors.redAccent, fontSize: 16, fontWeight: FontWeight.bold),
+            ),
+          ),
+        ),
+      ),
+    );
   };
 
-  PlatformDispatcher.instance.onError = (error, stack) {
-    print("PLATFORM_ERROR: $error");
-    return true;
-  };
+  try {
+    // 2. INICIJALIZACIJA FIREBASE-A
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
 
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+    if (kIsWeb) {
+      FirebaseFirestore.instance.settings = const Settings(
+        persistenceEnabled: false,
+      );
+    }
 
-  // Isključujemo IndexedDB keširanje na Web-u radi stabilnosti
-  if (kIsWeb) {
-    FirebaseFirestore.instance.settings = const Settings(
-      persistenceEnabled: false,
+    runApp(const MyApp());
+  } catch (e, stackTrace) {
+    // 3. HVATAČ FATALNIH GREŠAKA PRI POKRETANJU BAZE
+    runApp(
+      Directionality(
+        textDirection: TextDirection.ltr,
+        child: Material(
+          color: Colors.black,
+          child: Center(
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.all(20),
+              child: Text(
+                "🚨 FATALNA GREŠKA U POZADINI:\n\n$e\n\n$stackTrace",
+                style: const TextStyle(color: Colors.redAccent, fontSize: 14),
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
-
-  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -63,7 +93,6 @@ class _MyAppState extends State<MyApp> {
     super.initState();
 
     _auth = AuthProvider(FirebaseAuthRepository());
-    // Bezbedno pozivanje init() koje hvata sve potencijalne asinhronizovane greške
     _auth.init().catchError((error) {
       print("Uhvaćena inicijalna auth greška: $error");
     });
@@ -82,7 +111,6 @@ class _MyAppState extends State<MyApp> {
         ),
         ChangeNotifierProvider(create: (_) => CartProvider()),
         
-        // Wishlist sa bezbednom prowerom null vrednosti za session i uid
         ChangeNotifierProxyProvider<AuthProvider, WishlistProvider>(
           create: (_) => WishlistProvider(WishlistRepository()),
           update: (_, auth, wishlist) {
@@ -95,7 +123,6 @@ class _MyAppState extends State<MyApp> {
           },
         ),
 
-        // RecentlyViewed sa bezbednom prowerom null vrednosti za session i uid
         ChangeNotifierProxyProvider<AuthProvider, RecentlyViewedProvider>(
           create: (_) => RecentlyViewedProvider(RecentlyViewedRepository()),
           update: (_, auth, recent) {
@@ -108,7 +135,6 @@ class _MyAppState extends State<MyApp> {
             return target;
           },
         ),
-
         ChangeNotifierProvider(create: (_) => OrdersProvider()),
       ],
       child: Consumer<ThemeProvider>(
