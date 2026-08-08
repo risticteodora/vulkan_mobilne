@@ -18,14 +18,26 @@ import 'package:moj_projekat/repositories/firebase/recently_viewed_repository.da
 import 'package:moj_projekat/repositories/firebase/wishlist_repository.dart';
 import 'package:moj_projekat/router/app_router.dart';
 import 'package:provider/provider.dart';
+import 'dart:ui';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Nateraj Flutter da ispiše čitljivu grešku u pregledaču umesto minifikovanog aYT
+  FlutterError.onError = (FlutterErrorDetails details) {
+    FlutterError.dumpErrorToConsole(details);
+    print("FLUTTER_ERROR: ${details.exception}");
+  };
+
+  PlatformDispatcher.instance.onError = (error, stack) {
+    print("PLATFORM_ERROR: $error");
+    return true;
+  };
+
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  // Isključivanje IndexedDB keširanja na Web-u
   if (kIsWeb) {
     FirebaseFirestore.instance.settings = const Settings(
       persistenceEnabled: false,
