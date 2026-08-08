@@ -19,13 +19,21 @@ import 'package:moj_projekat/repositories/firebase/wishlist_repository.dart';
 import 'package:moj_projekat/router/app_router.dart';
 //import 'package:moj_projekat/screens/home_screen.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter/foundation.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
  void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  
+
+  if (kIsWeb) {
+    FirebaseFirestore.instance.settings = const Settings(
+      persistenceEnabled: false,
+    );
+  }
+
   runApp(const MyApp());
 }
 
