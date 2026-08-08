@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
 import 'package:moj_projekat/screens/cart_screen.dart';
 import 'package:moj_projekat/screens/home_screen.dart';
 import 'package:moj_projekat/screens/profile_screen.dart';
@@ -30,12 +29,29 @@ class _RootScreen extends State<RootScreen>{
       bottomNavigationBar: NavigationBar(
         selectedIndex: idx,
         onDestinationSelected: (value) => setState(() =>idx =value ),
-        destinations: const[
-          NavigationDestination(icon: Icon(IconlyLight.home),selectedIcon: Icon(IconlyBold.home) ,label: 'Home'),
-          NavigationDestination(icon: Icon(IconlyLight.search),selectedIcon: Icon(IconlyBold.search) ,label: 'Search'),
-          NavigationDestination(icon: Icon(IconlyLight.bag),selectedIcon: Icon(IconlyBold.bag) ,label: 'Cart'),
-          NavigationDestination(icon: Icon(IconlyLight.profile),selectedIcon: Icon(IconlyBold.profile) ,label: 'Profile')
+        destinations: const [
+          NavigationDestination(
+            icon: Icon(Icons.home_outlined),
+            selectedIcon: Icon(Icons.home),
+            label: 'Početna',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.search_outlined),
+            selectedIcon: Icon(Icons.search),
+            label: 'Pretraga',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.shopping_bag_outlined),
+            selectedIcon: Icon(Icons.shopping_bag),
+            label: 'Korpa',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.person_outline),
+            selectedIcon: Icon(Icons.person),
+            label: 'Profil',
+          ),
         ],
+
       ),
     );
   }

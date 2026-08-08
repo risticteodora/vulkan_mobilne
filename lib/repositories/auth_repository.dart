@@ -3,12 +3,14 @@ import 'package:moj_projekat/models/user_role.dart';
 class AuthSession{
   final bool isLoggedIn;
   final UserRole role;
+  final String? uid;   
   final String? email;
   final String? displayName;
 
   const AuthSession({
     required this.isLoggedIn,
     required this.role,
+    this.uid,
     this.email,
     this.displayName
   });

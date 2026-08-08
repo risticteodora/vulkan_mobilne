@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:moj_projekat/providers/cart_provider.dart';
 import 'package:moj_projekat/providers/catalog_provider.dart';
+import 'package:moj_projekat/providers/recently_viewed_provider.dart';
 import 'package:moj_projekat/providers/wishlist_provider.dart';
 import 'package:moj_projekat/util/money.dart';
 import 'package:provider/provider.dart';
 
-class BookDetailsScreen extends StatelessWidget{
+class BookDetailsScreen extends StatefulWidget{
   static const path= '/book';
   final String bookId;
 
@@ -15,9 +16,24 @@ class BookDetailsScreen extends StatelessWidget{
   });
   
   @override
+  State<BookDetailsScreen> createState() => _BookDetailsScreenState();
+}
+
+class _BookDetailsScreenState extends State<BookDetailsScreen> {
+  @override
+  void initState() {
+    super.initState();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      context.read<RecentlyViewedProvider>().add(widget.bookId);
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     final catalog= context.watch<CatalogProvider>();
-    final book=catalog.books.firstWhere((b)=> b.id == bookId);
+    final book=catalog.books.firstWhere((b)=> b.id == widget.bookId);
     final wished= context.watch<WishlistProvider>().isWished(book.id);
 
     return Scaffold(

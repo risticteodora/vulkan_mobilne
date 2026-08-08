@@ -19,6 +19,7 @@ class MockAuthRepository implements AuthRepository{
     _session= AuthSession(
       isLoggedIn: true, 
       role: role,
+      uid: 'mock_uid',
       email: email,
       displayName: role == UserRole.admin ? 'Vulkan Admin' : 'Vulkan Korisnik'
     );
@@ -38,6 +39,7 @@ class MockAuthRepository implements AuthRepository{
     _session=AuthSession(
       isLoggedIn: true, 
       role: UserRole.user,
+      uid: 'mock_uid',
       email: email,
       displayName: displayName
     );

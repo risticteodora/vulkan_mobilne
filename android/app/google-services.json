@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1040200074553",
+    "project_id": "vulkan-73586",
+    "storage_bucket": "vulkan-73586.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040200074553:android:342bdaaf8a4afd43f094e8",
+        "android_client_info": {
+          "package_name": "com.example.moj_projekat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE-OP14hXRf8zAyPt3VDzBjZstciGWgok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

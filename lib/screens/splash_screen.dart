@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen>{
 
   void initState(){
     super.initState();
-    _boot();
+    Future.microtask(_boot);
   }
 
   Future<void> _boot() async {

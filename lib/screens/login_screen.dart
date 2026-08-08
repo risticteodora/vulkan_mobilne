@@ -32,19 +32,24 @@ class _LoginScreenState extends State<LoginScreen> {
     super.dispose();
   }
 
-  Future<void> _login() async{
-    final ok= _form.currentState?.validate() ?? false;
-    if(!ok)
-      return;
-    
+  Future<void> _login() async {
+  final ok = _form.currentState?.validate() ?? false;
+  if (!ok) return;
+
+  try {
     await context.read<AuthProvider>().login(_email.text.trim(), _pass.text);
 
-    if(!mounted)
-      return;
-    
+    if (!mounted) return;
     context.go(RootScreen.path);
+  } catch (e) {
+    if (!mounted) return;
 
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('Login nije uspeo: $e')),
+    );
   }
+}
+
   
   @override
   Widget build(BuildContext context) {

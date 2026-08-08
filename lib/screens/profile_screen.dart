@@ -2,8 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:moj_projekat/models/user_role.dart';
 import 'package:moj_projekat/providers/auth_provider.dart';
+import 'package:moj_projekat/providers/cart_provider.dart';
+import 'package:moj_projekat/providers/recently_viewed_provider.dart';
+import 'package:moj_projekat/providers/wishlist_provider.dart';
 import 'package:moj_projekat/screens/admin_panel_screen.dart';
 import 'package:moj_projekat/screens/login_screen.dart';
+import 'package:moj_projekat/screens/orders_screen.dart';
+import 'package:moj_projekat/screens/recently_viewd_screen.dart';
 import 'package:moj_projekat/screens/wishlist_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -38,10 +43,19 @@ class ProfileScreen extends StatelessWidget{
             )
           else
             ElevatedButton.icon(
-              onPressed: ()=> context.read<AuthProvider>().logout(), 
-              icon:  const Icon(Icons.logout),
-              label: const Text('Logout')
+              onPressed: () async {
+                context.read<WishlistProvider>().clear();
+                context.read<RecentlyViewedProvider>().clear(); 
+                context.read<CartProvider>().clear(); 
+
+                await context.read<AuthProvider>().logout();
+
+                if (context.mounted) context.go(LoginScreen.path);
+              },
+              icon: const Icon(Icons.logout),
+              label: const Text('Logout'),
             ),
+
           const SizedBox(height: 12,),
           const Divider(),
           ListTile(
@@ -52,12 +66,12 @@ class ProfileScreen extends StatelessWidget{
           ListTile(
             leading: const Icon(Icons.history),
             title: const Text("Poslednje pregledano"),
-            //onTap: () => context.push(ViewedRecentlyScreen.path),
+            onTap: () => context.push(RecentlyViewedScreen.path),
           ),
           ListTile(
             leading: const Icon(Icons.receipt_long),
             title: const Text("Porudžbine"),
-            //onTap: () => context.push(OrdersScreen.path),
+            onTap: () => context.push(OrdersScreen.path),
           ),
           if(auth.role ==UserRole.admin)...[
             const Divider(),

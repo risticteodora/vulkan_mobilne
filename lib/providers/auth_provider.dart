@@ -44,10 +44,12 @@ class AuthProvider extends ChangeNotifier{
     }
   }
 
-  Future<void> logout() async{
+  Future<void> logout() async {
     await _repo.logout();
-    _session= AuthSession.guest;
+
+    _session = AuthSession.guest;
     notifyListeners();
-  }
+}
+
 
 }

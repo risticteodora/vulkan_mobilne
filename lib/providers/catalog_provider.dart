@@ -17,9 +17,11 @@ class CatalogProvider extends ChangeNotifier{
   Future<void> load() async{
     loading=true;
     notifyListeners();
+    
     try{
       categories=await _repo.getCategories();
       books=await _repo.getBooks();
+      
     }
     finally{
       loading=false;
@@ -29,9 +31,7 @@ class CatalogProvider extends ChangeNotifier{
 
   List<Book> get filtered{
     var list= books;
-    if(selectedCategoryId!= null){
-      list= list.where((b)=> b.categoryId == selectedCategoryId).toList();
-    }
+
     if(query.trim().isNotEmpty){
       final q= query.toLowerCase();
       list= list.where((b)=> b.title.toLowerCase().contains(q)).toList();
@@ -43,11 +43,6 @@ class CatalogProvider extends ChangeNotifier{
 
   void setQuery(String v){
     query=v;
-    notifyListeners();
-  }
-
-  void setCategory(String? id){
-    selectedCategoryId=id;
     notifyListeners();
   }
 }

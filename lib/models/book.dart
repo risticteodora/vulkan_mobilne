@@ -24,6 +24,14 @@ class Book {
         categoryId: j['categoryId'],
         description: j['description'],
         price: j['price'],
-        bestseller: j['bestseller'] == false
-      );
+        bestseller: j['bestseller'] as bool
+  );
+  Map<String, dynamic> toJson() => {
+        'title': title,
+        'image': image,
+        'categoryId': categoryId,
+        'description': description,
+        'price': price,
+        'bestseller': bestseller,
+      };
 }
