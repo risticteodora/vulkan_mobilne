@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
@@ -18,15 +19,13 @@ import 'package:moj_projekat/repositories/firebase/recently_viewed_repository.da
 import 'package:moj_projekat/repositories/firebase/wishlist_repository.dart';
 import 'package:moj_projekat/router/app_router.dart';
 import 'package:provider/provider.dart';
-import 'dart:ui';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Nateraj Flutter da ispiše čitljivu grešku u pregledaču umesto minifikovanog aYT
+  // Hvatanje grešaka u konzoli za lakše praćenje
   FlutterError.onError = (FlutterErrorDetails details) {
     FlutterError.dumpErrorToConsole(details);
-    print("FLUTTER_ERROR: ${details.exception}");
   };
 
   PlatformDispatcher.instance.onError = (error, stack) {
@@ -38,6 +37,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
+  // Isključujemo IndexedDB keširanje na Web-u radi stabilnosti
   if (kIsWeb) {
     FirebaseFirestore.instance.settings = const Settings(
       persistenceEnabled: false,
@@ -61,7 +61,13 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    _auth = AuthProvider(FirebaseAuthRepository())..init();
+
+    _auth = AuthProvider(FirebaseAuthRepository());
+    // Bezbedno pozivanje init() koje hvata sve potencijalne asinhronizovane greške
+    _auth.init().catchError((error) {
+      print("Uhvaćena inicijalna auth greška: $error");
+    });
+
     _router = AppRouter.create(_auth);
   }
 
@@ -75,6 +81,8 @@ class _MyAppState extends State<MyApp> {
           create: (_) => CatalogProvider(FirebaseBookRepository()),
         ),
         ChangeNotifierProvider(create: (_) => CartProvider()),
+        
+        // Wishlist sa bezbednom prowerom null vrednosti za session i uid
         ChangeNotifierProxyProvider<AuthProvider, WishlistProvider>(
           create: (_) => WishlistProvider(WishlistRepository()),
           update: (_, auth, wishlist) {
@@ -86,6 +94,8 @@ class _MyAppState extends State<MyApp> {
             return target;
           },
         ),
+
+        // RecentlyViewed sa bezbednom prowerom null vrednosti za session i uid
         ChangeNotifierProxyProvider<AuthProvider, RecentlyViewedProvider>(
           create: (_) => RecentlyViewedProvider(RecentlyViewedRepository()),
           update: (_, auth, recent) {
@@ -98,6 +108,7 @@ class _MyAppState extends State<MyApp> {
             return target;
           },
         ),
+
         ChangeNotifierProvider(create: (_) => OrdersProvider()),
       ],
       child: Consumer<ThemeProvider>(
